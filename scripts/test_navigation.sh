@@ -9,4 +9,4 @@ xterm -e " source $(pwd)/../../devel/setup.bash; roslaunch turtlebot_gazebo amcl
 sleep 5
 
 # view navigation
-xterm  -e  " source $(pwd)/../../devel/setup.bash; roslaunch turtlebot_rviz_launchers view_navigation.launch " &
+xterm  -e  " source $(pwd)/../../devel/setup.bash; roslaunch turtlebot_rviz_launchers view_navigation.launch " 
