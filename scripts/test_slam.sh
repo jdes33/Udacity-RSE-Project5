@@ -1,7 +1,11 @@
 #!/bin/sh
+
+#launch given world
 #xterm  -e  "  roslaunch turtlebot_gazebo turtlebot_world.launch " &
 
-xterm -e "roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/workspace/PROJECT-5-HOME-SERVICE-ROBOT/catkin_ws/src/map/myworld.world" &
+# launch my world
+# note: could`ve used `rospack find` instead of pwd if the world file was in a package
+xterm -e "roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(pwd)/../map/myworld.world" &
 
 sleep 25
 xterm -e " roslaunch turtlebot_gazebo gmapping_demo.launch" &
