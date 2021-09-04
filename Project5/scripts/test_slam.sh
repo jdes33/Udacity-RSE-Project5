@@ -1,5 +1,7 @@
 #!/bin/sh
 
+### This script launces the turtlebot in my world, opens rviz and allows you to control the robot via a keyboard as it maps the world (creates a 2d occupancy grid map)
+
 # launch my world
 # note: could`ve used `rospack find` instead of pwd if the world file was in a package
 xterm -e " source $(pwd)/../../devel/setup.bash; roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(pwd)/../map/myworld.world" &

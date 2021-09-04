@@ -1,5 +1,6 @@
 #!/bin/sh
 
+### This script launces the turtlebot in my world, opens rviz and then makes robot go to picup zone, wait 5 seconds, then makes robot return to dropoff zone
 
 # launch turtlebot (in my world)
 xterm -e "source $(pwd)/../../devel/setup.bash; roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(pwd)/../map/myworld.world" &

@@ -208,4 +208,8 @@ include_directories(
 # add_markers node stuff
 add_executable(add_markers src/add_markers.cpp)
 target_link_libraries(add_markers ${catkin_LIBRARIES})
+
+# add_markers_goal_based node stuff
+add_executable(add_markers_goal_based src/add_markers_goal_based.cpp)
+target_link_libraries(add_markers_goal_based ${catkin_LIBRARIES})
 ##

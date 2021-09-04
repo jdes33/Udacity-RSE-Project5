@@ -1,5 +1,6 @@
 #!/bin/sh
 
+### This script launces the turtlebot in my world, opens rviz and dispays the marker at pickup zone until robot gets to it, then it shows the marker at drop off zone when robot gets there
 
 # launch turtlebot (in my world)
 xterm -e "source $(pwd)/../../devel/setup.bash; roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(pwd)/../map/myworld.world" &
@@ -17,5 +18,5 @@ sleep 10
 xterm  -e  "source $(pwd)/../../devel/setup.bash; rosrun pick_objects pick_objects " &
 
 # launch add_markers
-xterm  -e  "source $(pwd)/../../devel/setup.bash; rosrun add_markers add_markers " 
+xterm  -e  "source $(pwd)/../../devel/setup.bash; rosrun add_markers add_markers_goal_based " 
 
