@@ -1,6 +1,6 @@
 #!/bin/sh
 
-### This script launces the turtlebot in my world and opens rviz. Once you manually add a marker to rviz it then displays marker (yellow cylinder) at pickup zone, waits 5 seconds, hides the marker for 5 seconds and then displays at dropoff zone indefinitely)
+### This script launces the turtlebot in my world and opens rviz. Once you manually add a marker to rviz it then displays marker (blue cylinder) at pickup zone, waits 5 seconds, hides the marker for 5 seconds and then displays at dropoff zone indefinitely)
 
 # launch turtlebot (in my world)
 xterm -e "source $(pwd)/../../devel/setup.bash; roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(pwd)/../map/myworld.world" &
