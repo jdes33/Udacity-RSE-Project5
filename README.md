@@ -15,7 +15,7 @@ The following are packaged I created:
  - add_markers: for displaying the object as a marker (a blue cylinder) at the pickup and drop off zones (uses parameter server to get status of object to do this)
 
 
-# Here are some images showing navigation (run the home_service.sh script to see this in action):
+# Images showing navigation (run the home_service.sh script to see this in action):
 ### First the robot moves to the pickup location to obtain the object (object is blue).
 ![Alt text](media/moving_to_object.png?raw=true "moving_to_object")
 ### After picking it up, the robot waits 5 seconds then begins to travel to the drop off location.
